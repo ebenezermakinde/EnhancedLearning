@@ -1,12 +1,236 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Homepage</title>
+  <title>Homepage | Enhanced Learning Travel & Tours</title>
+  <!-- Links -->
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="./assets/styles/mobile.css">
 </head>
+
 <body>
-  <h1>Testing Homepage</h1>
+  <!-- Navigation -->
+  <nav id="main-nav">
+    <div class="container-fluid">
+      <div class="menu-nav">
+        <img src="./assets/img/EnhancedLearning_3.png" alt="Enhanced" class="logo" />
+        <div class="menu-toggle">
+          <i class="fas fa-bars fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- section: Showcase -->
+  <section class="showcase overlay py-2">
+    <h2 class="text-center">Want to book a trip?</h2>
+    <div class="container showcase-form">
+      <form action="">
+        <div class="form-group">
+          <select name="destination" id="destination" class="input-group" required>
+            <option value="" disabled selected>Destination</option>
+            <option value="dubai">Dubia</option>
+            <option value="dublin">Dublin</option>
+            <option value="london">London</option>
+            <option value="sa">South Africa</option>
+            <option value="ghana">Ghana</option>
+            <option value="kenya">Kenya</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select name="month" id="month" class="input-group" required>
+            <option value="" disabled selected>Month</option>
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select name="sort" id="sort" class="input-group" required>
+            <option value="" disabled selected>Sort</option>
+            <option value="sortbydate">Sort By Date</option>
+            <option value="lowtohigh">Price low to High</option>
+            <option value="popularity">Popularity</option>
+          </select>
+        </div>
+        <button class="btn">Search</button>
+      </form>
+    </div>
+  </section>
+  <!-- Div: Featured Destinations -->
+  <div class="featured-destinations py-2">
+    <div class="container">
+      <h2 class="text-center">Featured Destinations</h2>
+      <div class="destinations">
+        <div class="card" id="featured-1">
+          <div>
+            <div>
+              <img src="./assets/img/showcase.jpg" alt="">
+            </div>
+            <p class="location">Dublin</p>
+            <hr>
+            <p class="brief">Visit beautiful dublin and<a href="" class="color-primary"> ...read more</a></p>
+          </div>
+        </div>
+        <div class="card" id="featured-2">
+          <div>
+            <div>
+              <img src="./assets/img/showcase.jpg" alt="">
+            </div>
+            <p class="location">Dublin</p>
+            <hr>
+            <p class="brief">Visit beautiful dublin and<a href="" class="color-primary"> ...read more</a></p>
+          </div>
+        </div>
+        <div class="card" id="featured-3">
+          <div>
+            <div>
+              <img src="./assets/img/showcase.jpg" alt="">
+            </div>
+            <p class="location">Dublin</p>
+            <hr>
+            <p class="brief">Visit beautiful dublin and<a href="" class="color-primary"> ...read more</a></p>
+          </div>
+        </div>
+        <div class="card" id="featured-4">
+          <div>
+            <div>
+              <img src="./assets/img/showcase.jpg" alt="">
+            </div>
+            <p class="location">Dublin</p>
+            <hr>
+            <p class="brief">Visit beautiful dublin and<a href="" class="color-primary"> ...read more</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-1"><a href="./destinations.html" class="btn">See More Destinations</a></div>
+  </div>
+  <!-- Div: Services -->
+  <div class="our-services py-2" id="services">
+    <div class="services-content">
+      <h2 class="text-center">Services</h2>
+      <div class="container">
+        <div class="services">
+          <div class="dropdown">
+            <div class="text-center">
+              <img src="./assets/img/trip2.png" class="services-img" alt="trips">
+            </div>
+            <h4 class="trigger">Trips</h4>
+            <div class="content">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis possimus, a natus totam sequi
+                velit? Vel cupiditate hic incidunt quam laboriosam tenetur nam, voluptate, necessitatibus ex porro,
+                soluta accusantium aspernatur.</p>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="text-center">
+              <img src="./assets/img/ticket_reservation.png" class="services-img" alt="air ticket reservations">
+            </div>
+            <h4 class="trigger">Ticket Reservations</h4>
+            <div class="content">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis possimus, a natus totam sequi
+                velit? Vel cupiditate hic incidunt quam laboriosam tenetur nam, voluptate, necessitatibus ex porro,
+                soluta accusantium aspernatur.</p>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="text-center">
+              <img src="./assets/img/visa_processing_assist.png" class="services-img" alt="visa processing">
+            </div>
+            <h4 class="trigger">Visa Processing Assistance</h4>
+            <div class="content">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis possimus, a natus totam sequi
+                velit? Vel cupiditate hic incidunt quam laboriosam tenetur nam, voluptate, necessitatibus ex porro,
+                soluta accusantium aspernatur.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Div: Clients -->
+  <div class="clients py-2">
+    <h2 class="text-center">Our Clients</h2>
+    <div class="container">
+      <div class="clients-logo text-center">
+        <div>
+          <img src="./assets/img/coronasch1.png" class="clients-img" alt="corona school">
+        </div>
+        <div>
+          <img src="./assets/img/lagoonsch.png" class="clients-img" alt="lagoon school">
+        </div>
+        <div>
+          <img src="./assets/img/sef.jpg" class="clients-img" alt="babcook">
+        </div>
+        <div>
+          <img src="./assets/img/babcook.jpg" class="clients-img" alt="emzor">
+        </div>
+        <div>
+          <img src="./assets/img/emzor.png" class="clients-img" alt="babcook">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer id="main-footer" class="py-2">
+    <div class="container footer-container">
+      <div>
+        <h3>Contact info</h3>
+        <p><i class="fas fa-phone"></i> +2348023419125</p>
+        <p><i class="fas fa-phone"></i> +2348052802525</p>
+        <p><i class="fas fa-map-marker-alt"></i> 323, Ikorodu Crescent, Dolphin Estate, Ikoyi Lagos.</p>
+        <div>
+          <span><a href="#" class="facebook"><i class="fab fa-facebook fa-2x"></i></a></span>
+          <span><a href="#" class="twitter"><i class="fab fa-twitter fa-2x"></i></a></span>
+          <span><a href="#" class="linkedIn"><i class="fab fa-linkedin fa-2x"></i></a></span>
+        </div>
+      </div>
+      <div>
+        <h3>Who we are</h3>
+        <p>We are a tourism promotion company specializing in Educational, family and group tours within and outside
+          Nigeria.</p>
+        <h3>Our Mission</h3>
+        <p>We aim to inspire Nigerians to travel within and outside this country, to explore the vast rich cultural and
+          geographical heritage of our country and any other country we go, while having fun and also learning something
+          new.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="list">
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>Copyright &copy; 2019 Enhanced Learning Travel & Tours. All rights reserved</p>
+        <p>Developed by <a href="codeoptimus.io">codeoptimus</a></p>
+      </div>
+    </div>
+  </footer>
   <script src="assets/bundle-front.js"></script>
 </body>
+
 </html>
