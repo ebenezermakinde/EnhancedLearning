@@ -229,6 +229,68 @@ img {
   grid-gap: 0.7rem;
 }
 
+/* Contact Us */
+.container .contact-form {
+  background: #fff;
+  padding: 1rem;
+  margin: 0 1rem;
+  border-radius: 10px;
+}
+
+.contact-form .flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0.2rem;
+}
+
+.wrap-input {
+  width: 100%;
+  position: relative;
+  border: 1px solid #e6e6e6;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 10px 30px 9px 22px;
+}
+
+.half-wrap-input {
+  width: calc((100% - 30px)/2);
+}
+
+input.input,
+textarea.textarea,
+select.select {
+  height: 40px;
+  outline: none;
+  border: none;
+}
+
+.label-input {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.input,
+.select,
+.textarea {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.2;
+  padding-right: 15px;
+}
+
+textarea.textarea {
+  min-height: 120px;
+  padding: 9px 13px 0 0;
+}
+
+.show-service .ticket-options,
+.show-service .trip-options {
+  line-height: 2;
+  display: none;
+}
+
 /* Footer */
 #main-footer {
   background: var(--dark-color);
