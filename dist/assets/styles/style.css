@@ -50,6 +50,18 @@ img {
   overflow: hidden
 }
 
+/* Inner page grid container */
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
+}
+
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
+}
+
 .py-1 { padding: 1rem 0; }
 .py-2 { padding: 2rem 0; }
 .py-3 { padding: 3rem 0; }
@@ -61,6 +73,12 @@ img {
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 5px;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 .btn:hover {
@@ -289,6 +307,27 @@ textarea.textarea {
 .show-service .trip-options {
   line-height: 2;
   display: none;
+}
+
+/* About Us */
+.page-container .about-us {
+  padding: 0.5rem 0;
+  line-height: 1.8;
+}
+
+.page-container .about-us:nth-child(3) > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.page-container .about-us div > img {
+  width: 250px;
+}
+
+.page-container aside.card p {
+  padding: 0.5rem 0;
 }
 
 /* Footer */

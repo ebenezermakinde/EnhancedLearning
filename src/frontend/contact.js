@@ -6,7 +6,7 @@ class Service extends Dropdown {
     super(container)
     this.container = container;
     this.trigger = container.querySelector('.service');
-    this.content = this.container.querySelector('.show-service');
+    this.content = container.querySelector('.show-service');
     this.trip = this.content.querySelector('.trip-options');
     this.ticket = this.content.querySelector('.ticket-options');
   }
