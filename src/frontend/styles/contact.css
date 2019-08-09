@@ -1,0 +1,17 @@
+.show-service {
+  padding: 0 0.5rem 1rem 1rem;
+  display: none;
+} 
+
+.show-service.active,
+.show-service .trip-options.active,
+.show-service .ticket-options.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+
+

@@ -35,3 +35,13 @@
     border-bottom: #444 dotted 1px;
     padding-bottom: 1rem;
   }
+
+@media screen and (max-width: 600px) {
+  .contact-form .flex {
+    display: block;
+  }
+
+  .half-wrap-input {
+    width: 100%;
+  }
+}
