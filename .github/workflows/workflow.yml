@@ -1,7 +1,7 @@
 on:
   schedule: 
     # runs every 5mins
-    - cron: "*/5 * * * *"
+    - cron: "55 23 * * 7"
     
 jobs:
   # This workflow contains a single job called "traffic"
