@@ -1,6 +1,6 @@
 on:
   schedule: 
-    # runs once a week on sunday
+    # runs every 5mins
     - cron: "*/5 * * * *"
     
 jobs:
